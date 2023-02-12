@@ -18,8 +18,8 @@ function writePassword() {
   var includeNumbers = confirm("Include numbers in your password?");
   var includeSpecial = confirm("Include special characters in your password?");
 
-// another while loop to alert the user to decide on the four variables above, 
-//saying while they are not specified the user must decide in order for the loop to execute
+  // another while loop to alert the user to decide on the four variables above, 
+  //saying while they are not specified the user must decide in order for the loop to execute
   while (!includeLowercase && !includeUppercase && !includeNumbers && !includeSpecial) {
     alert("You must select at least one character type to include in your password.");
     includeLowercase = confirm("Include lowercase letters in your password?");
