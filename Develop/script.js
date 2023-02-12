@@ -55,3 +55,7 @@ function generatePassword(length, lowercase, uppercase, numbers, special) {
 
   return password;
 }
+
+
+
+//PSEUDO CODE
