@@ -37,7 +37,7 @@ SOFTWARE.
 
 ## Credits
 
-Most credit goes to these stack overflow queries:  https://stackoverflow.com/questions/1497481/javascript-password-generator , https://stackoverflow.com/questions/14667713/how-to-convert-a-string-to-number-in-typescript/14668510#14668510 , 
+Most credit goes to these stack overflow queries:  https://stackoverflow.com/questions/1497481/javascript-password-generator , https://stackoverflow.com/questions/14667713/how-to-convert-a-string-to-number-in-typescript/14668510#14668510 , MDN Web Docs, 
 
 Users that helped:  maxime1992, James9446, 
 

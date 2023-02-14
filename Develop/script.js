@@ -5,7 +5,9 @@ var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
 function writePassword() {
 
-  // A 'while' loop sets the condition to satisfy the password criteria and then alerts the user to choose password length 
+  // A ParseInt Method helps us choose an integer from the string the user enters in the initial prompt
+  // A 'while loop'will allow us to tell the user that they haven't met the criteria if what they enter 
+  // is "not a number" "or" is less than 8 characters "or" is more than 128 characters.
   var passwordLength = parseInt(prompt("Choose a password length between 8 and 128 characters."));
   while (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
     alert("Password length must be a number between 8 and 128.");
@@ -18,8 +20,8 @@ function writePassword() {
   var includeNumbers = confirm("Include numbers in your password?");
   var includeSpecial = confirm("Include special characters in your password?");
 
-  // another while loop to alert the user to decide on the four variables above, 
-  //saying while they are not specified the user must decide in order for the loop to execute
+
+  // another while loop prompts the user to decide on the four variables above
   while (!includeLowercase && !includeUppercase && !includeNumbers && !includeSpecial) {
     alert("You must select at least one character type to include in your password.");
     includeLowercase = confirm("Include lowercase letters in your password?");
@@ -28,7 +30,8 @@ function writePassword() {
     includeSpecial = confirm("Include special characters in your password?");
   }
   
-  // password variable combines the variables above to simplify the code and then links it 
+
+  // password variable combines the variables above to simplify the code and then links it... 
   // to the textarea and password ID in the HTML document and scans the page for input there
   var password = generatePassword(passwordLength, includeLowercase, includeUppercase, includeNumbers, includeSpecial);
   var passwordText = document.querySelector("#password");
@@ -37,10 +40,12 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+// Add event listener to generate button scanning for a "click" and calling the writePassword function
 generateBtn.addEventListener("click", writePassword);
 
-// Generate password function
+
+// Generates a random password with the string the user entered and guided by the booleans the user set
+// to choose from the four arrays of possible characters
 function generatePassword(length, lowercase, uppercase, numbers, special) {
   var password = "";
   var characters = "";
@@ -55,6 +60,8 @@ function generatePassword(length, lowercase, uppercase, numbers, special) {
 
   return password;
 }
+
+
 
 
 
