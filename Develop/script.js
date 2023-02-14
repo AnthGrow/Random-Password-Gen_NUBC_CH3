@@ -58,4 +58,14 @@ function generatePassword(length, lowercase, uppercase, numbers, special) {
 
 
 
-//PSEUDO CODE
+//PSEUDO CODE FOR PASSWORD GEN
+
+// I want a button that listens for a click and generates a prompt
+
+// The prompt will first ask how many characters the user wants in their password
+
+// The prompts will ask the user a boolean (true or false) for 4 questions - Do you want to use characters: [lowercase, uppercase, numbers, special characters]
+
+// When all of these prompts are answered use the Math.random() function to parse the characters 
+
+// Generate and display text
