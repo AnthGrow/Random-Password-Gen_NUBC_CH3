@@ -1,7 +1,7 @@
 # Random-Password-Gen_NUBC_CH3
 
 ## Description
-This is challenge number 3 of the NU Bootcamp.  The challenge is to create a random password generator.
+This is Challenge number 3 of the NU Bootcamp.  The challenge is to create a random password generator in javascript with the starter code that was presented.
 
 ## Installation Instructions:  
 This project is written in HTML, CSS, and JS and can be executed in a web browser.
@@ -37,9 +37,14 @@ SOFTWARE.
 
 ## Credits
 
-Most credit goes to these stack overflow queries:  https://stackoverflow.com/questions/1497481/javascript-password-generator , https://stackoverflow.com/questions/14667713/how-to-convert-a-string-to-number-in-typescript/14668510#14668510 , MDN Web Docs, 
+Credit goes to these stack overflow queries:  https://stackoverflow.com/questions/1497481/javascript-password-generator , https://stackoverflow.com/questions/14667713/how-to-convert-a-string-to-number-in-typescript/14668510#14668510 
 
 Users that helped:  maxime1992, James9446, 
+
+MDN Web Docs - While loops, logical Or, random.math(), and many more. 
+
+I also watched many Youtube videos from authors: The Net Ninja, Chart JS, Nazmus Nasir and more.
+
 
 ## Contact Information
 

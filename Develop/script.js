@@ -6,7 +6,7 @@ var generateBtn = document.querySelector("#generate");
 function writePassword() {
 
   // A ParseInt Method helps us choose an integer from the string the user enters in the initial prompt
-  // A 'while loop'will allow us to tell the user that they haven't met the criteria if what they enter 
+  // A 'while loop' allows us to tell the user that they haven't met the criteria if what they enter... 
   // is "not a number" "or" is less than 8 characters "or" is more than 128 characters.
   var passwordLength = parseInt(prompt("Choose a password length between 8 and 128 characters."));
   while (isNaN(passwordLength) || passwordLength < 8 || passwordLength > 128) {
@@ -14,14 +14,15 @@ function writePassword() {
     passwordLength = parseInt(prompt("Choose a password length between 8 and 128 characters."));
   }
 
-  // sets variables for the elements of the password and prompts the user to choose which variables
+  // sets variables for the elements of the password and equates them to the prompts the user will see
   var includeLowercase = confirm("Include lowercase letters in your password?");
   var includeUppercase = confirm("Include uppercase letters in your password?");
   var includeNumbers = confirm("Include numbers in your password?");
   var includeSpecial = confirm("Include special characters in your password?");
 
 
-  // another while loop prompts the user to decide on the four variables above
+  // another while loop prompts the user to decide on the four variables above saying if all of the... 
+  // variables are "Not" chosen, alert the user until they confirm
   while (!includeLowercase && !includeUppercase && !includeNumbers && !includeSpecial) {
     alert("You must select at least one character type to include in your password.");
     includeLowercase = confirm("Include lowercase letters in your password?");
